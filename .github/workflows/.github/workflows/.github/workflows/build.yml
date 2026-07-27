@@ -28,6 +28,7 @@ jobs:
 
       - name: Build with Buildozer
         run: |
+          export ANDROID_NDK_HOME=$ANDROID_SDK_ROOT/ndk/25.2.9519653
           buildozer -v android debug
 
       - name: Upload APK
